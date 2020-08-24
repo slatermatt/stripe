@@ -7,7 +7,7 @@
 	
 	@foreach ($stats as $stat)
 		<div>
-			<h1>{!! $stat['figure'] !!}</h1>
+			<h2>{!! $stat['figure'] !!}</h2>
 	
 			<p>{!! $stat['description'] !!}</p>
 		</div>

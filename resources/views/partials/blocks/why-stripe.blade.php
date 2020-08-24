@@ -7,7 +7,7 @@
 		<div>
 			<icon name="{!! $feature['icon'] !!}" ></icon>
 	
-			<h1>{!! $feature['title'] !!}</h1>
+			<h2>{!! $feature['title'] !!}</h2>
 	
 			<p>{!! $feature['content'] !!}</p>
 		</div>
