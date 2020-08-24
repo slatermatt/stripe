@@ -19,6 +19,7 @@
 			],
 		],
 		'clients' => [
+			'title' => 'Our clients',
 			'items' => [
 				[
 					'name' => 'deliveroo',
