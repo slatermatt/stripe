@@ -6,6 +6,7 @@ button {
 
 .e-button {
 	@apply
+		inline-block
 		relative
 		p-4
 		bg-brand-red
