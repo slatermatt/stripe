@@ -62,6 +62,17 @@ return [
 								],
 							],
 						],
+						'helvetica-neue' => [
+							'heading' => 'Helvetica Neue',
+							'copy' => 'Exercitation reprehenderit quis reprehenderit nisi in dolor. Ipsum quis veniam ipsum laboris nisi.',
+							'partial' => 'foundation/fonts',
+							'style' => 'font-family: "Helvetica Neue"',
+							'attributes' => [
+								[
+									'weights' => [400, 500, 700],
+								],
+							],
+						],
 					],
 				],
 				'colour' => [
