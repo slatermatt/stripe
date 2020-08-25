@@ -1,4 +1,4 @@
-	<h1 class="e-h1">The quick brown fox jumps over the lazy dog</h1>
+	<h1 class="e-h1">Payments<br> infrastructure<br> for the internet</h1>
 
 	<h2 class="e-h2">The quick brown fox jumps over the lazy dog</h2>
 
