@@ -10,6 +10,8 @@
 	"colors": {
 		"brand": {
 			"blue-dark": "#0a2540",
+			"blue-light": "#00d4ff",
+			"purple": "#635bff",
 			"body": "#425466"
 		},
 		"black": "#000",

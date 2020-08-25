@@ -71,13 +71,16 @@ module.exports = {
 			none: 1,
 			tight: 1.0425,
 			snug: 1.2,
-			normal: 1.5,
+			normal: 1.6,
 			relaxed: 1.75,
 			loose: 2,
 		},
 		transitionTimingFunction: easing,
 		zIndex,
 		extend: {
+			borderRadius: {
+				button: '16.5px',
+			},
 			inset: (theme, { negative }) => ({
 				'1/2': '50%',
 				...widths,
