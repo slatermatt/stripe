@@ -2,7 +2,7 @@
 
 @section('content')
 
-	@include('partials/blocks/page-header', $model['pageHeader'])
+	@include('partials/page-header', $model['pageHeader'])
 
 	@include('partials/blocks/clients', $model['clients'])
 
