@@ -14,7 +14,7 @@
 				],
 			],
 			'image' => [
-				'url' => '//placehold.it/1600x900',
+				'url' => '//placehold.it/1000',
 				'alt' => 'Infographic of payment system & stats displayed in charts',
 			],
 		],
