@@ -2,7 +2,7 @@
 	"browser-default-font-size": 16,
 	"breakpoints": {
 		"xs": 375,
-		"sm": 560,
+		"sm": 600,
 		"md": 768,
 		"lg": 1024,
 		"xl": 1248

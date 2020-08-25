@@ -24,7 +24,7 @@ const zIndex = z.reduce((v, name, i) => ({ ...v, [name]: z.length - i }), {});
 // tailwind settings
 module.exports = {
 	purge: false,
-  target: 'relaxed',
+	target: 'relaxed',
 	theme: {
 		screens,
 		colors: {
@@ -78,16 +78,20 @@ module.exports = {
 		transitionTimingFunction: easing,
 		zIndex,
 		extend: {
-			borderRadius: {
-				button: '16.5px',
-			},
 			inset: (theme, { negative }) => ({
 				'1/2': '50%',
 				...widths,
 				...(negative(widths)),
+				'32': relative(128),
 			}),
+			borderRadius: {
+				button: '16.5px',
+			},
+			minWidth: {
+				title: 'calc(100% + 100px)',
+			},
 			maxWidth: {
-				container: relative(1400),
+				container: relative(1080),
 				copy: '35em',
 			},
 			padding: {
