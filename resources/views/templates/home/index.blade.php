@@ -146,22 +146,26 @@
 					'title' => 'A technology-first approach to payments and finance',
 					'features' => [
 						[
-							'icon' => 'hexagon',
+							// 'icon' => 'hexagon',
+							'icon' => 'chevron-up',
 							'title' => 'Close to the metal',
 							'content' => 'From <a href="/">direct integrations</a> with card networks and banks to checkout flows in the browser, we operate on and optimize at every level of the financial stack.',
 						],
 						[
-							'icon' => 'fast-forward',
+							// 'icon' => 'fast-forward',
+							'icon' => 'chevron-down',
 							'title' => 'Fastest-improving platform',
 							'content' => 'We release <a href="/">hundreds of features</a> and improvements each year to help you stay ahead of industry shifts. (On average, we deploy our production API 16x per day.)',
 						],
 						[
-							'icon' => 'ecg-check',
+							// 'icon' => 'ecg-check',
+							'icon' => 'chevron-left',
 							'title' => 'Battle-tested reliability',
 							'content' => 'Our systems operate with <a href="/">99.9%+</a> uptime and are highly scalable and redundant. Stripe is certified to the highest compliance standards.',
 						],
 						[
-							'icon' => 'cogs',
+							// 'icon' => 'cogs',
+							'icon' => 'chevron-right',
 							'title' => 'Intelligent optimizations',
 							'content' => 'Our machine learning models train on <a href="/">billions</a> of data points and help increase revenue across conversion, fraud, revenue recovery, and more.',
 						],
