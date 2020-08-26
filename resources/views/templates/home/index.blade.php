@@ -75,9 +75,27 @@
 							'url' => route('templates.show', 'payments/index'),
 						],
 					],
-					'image' => [
-						'url' => '//placehold.it/1600x900',
-						'alt' => 'Infographic of payment system | Bank card | Calculator',
+					'gallery' => [
+						'card' => [
+							'url' => '//placehold.it/383x237?text=card',
+							'alt' => 'Bank card',
+						],
+						'invoice' => [
+							'url' => '//placehold.it/590x424?text=invoice',
+							'alt' => 'Infographic of invoice payment system',
+						],
+						'phone' => [
+							'url' => '//placehold.it/302x618?text=phone',
+							'alt' => 'Phone payment',
+						],
+						'web' => [
+							'url' => '//placehold.it/1024x540?text=web',
+							'alt' => 'Infographic of web control panel',
+						],
+						'calculator' => [
+							'url' => '//placehold.it/304x566?text=calc',
+							'alt' => 'Calculator',
+						],
 					],
 				],
 			],

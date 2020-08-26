@@ -81,9 +81,20 @@ module.exports = {
 			inset: (theme, { negative }) => ({
 				'1/2': '50%',
 				...widths,
+				...theme('spacing'),
+				...(negative(theme('spacing'))),
 				...(negative(widths)),
-				'32': relative(128),
 			}),
+			gridTemplateColumns: {
+				'products-md': '323px 501px 256px',
+				'products-xs': '253px 392px 201px',
+				'products': '112px 141px 58px 38px',
+			},
+			gridTemplateRows: {
+				'products-md': '86px 201px 126px 425px',
+				'products-xs': '70px 157px 97px 333px',
+				'products': '107px 87px 125px 185px',
+			},
 			borderRadius: {
 				button: '16.5px',
 			},
@@ -94,6 +105,7 @@ module.exports = {
 				container: relative(1080),
 				copy: '35em',
 				screen: '100vw',
+				phone: relative(300),
 			},
 			padding: {
 				full: '100%',
@@ -102,10 +114,18 @@ module.exports = {
 				'4/14': ratio(14, 4),
 				'3/4': ratio(4, 3),
 				'4/3': ratio(3, 4),
+				'card': ratio(383, 237),
+				'invoice': ratio(590, 424),
+				'phone': ratio(302, 618),
+				'web': ratio(1024, 540),
+				'calculator': ratio(304, 566),
 			},
 			spacing: {
 				em: '1em',
 				'1/2em': '.5em',
+				'191': relative(764),
+				'118': relative(472),
+				'92': relative(368),
 			},
 			width: {
 				...widths,
