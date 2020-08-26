@@ -93,6 +93,7 @@ module.exports = {
 			maxWidth: {
 				container: relative(1080),
 				copy: '35em',
+				screen: '100vw',
 			},
 			padding: {
 				full: '100%',

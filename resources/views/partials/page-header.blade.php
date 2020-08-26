@@ -1,4 +1,6 @@
-<header class="overflow-hidden">
+<header class="relative overflow-hidden">
+	@include('partials/guides')
+
 	<container>
 		<div class="grid sm:grid-cols-2 items-center">
 			<div class="grid gap-8">
