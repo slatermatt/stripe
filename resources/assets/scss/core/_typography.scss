@@ -22,6 +22,14 @@ $h--5: (
 	base: 'xs',
 );
 
+$body: (
+	base: 'base',
+);
+
+$body--small: (
+	base: 'xs',
+);
+
 .e-h1,
 .e-h2,
 .e-h3,
@@ -58,4 +66,14 @@ $h--5: (
 	@include font-size($h--5);
 
 	@apply font-normal;
+}
+
+.e-body {
+	@include font-size($body);
+
+	@apply font-light leading-normal;
+
+	&--small {
+		@include font-size($body--small);
+	}
 }

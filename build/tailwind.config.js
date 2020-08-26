@@ -114,6 +114,7 @@ module.exports = {
 				'4/14': ratio(14, 4),
 				'3/4': ratio(4, 3),
 				'4/3': ratio(3, 4),
+				'66/55': ratio(55, 66),
 				'card': ratio(383, 237),
 				'invoice': ratio(590, 424),
 				'phone': ratio(302, 618),
