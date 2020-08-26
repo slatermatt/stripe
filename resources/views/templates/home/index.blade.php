@@ -113,7 +113,8 @@
 					],
 					'features' => [
 						[
-							'icon' => 'settings',
+							// 'icon' => 'settings',
+							'icon' => 'chevron-right',
 							'title' => 'Tools for every stack',
 							'content' => 'We offer client and server libraries in everything from React and PHP to .NET and iOS.',
 							'cta' => [
@@ -122,7 +123,8 @@
 							],
 						],
 						[
-							'icon' => 'boxes',
+							// 'icon' => 'boxes',
+							'icon' => 'chevron-up',
 							'title' => 'Prebuilt integrations',
 							'content' => 'Use integrations for systems like Shopify, WooCommerce, NetSuite, and more.',
 							'cta' => [
@@ -132,7 +134,7 @@
 						],
 					],
 					'image' => [
-						'url' => '//placehold.it/1600x900',
+						'url' => '//placehold.it/550x660',
 						'alt' => 'Simple code snippet',
 					],
 				],
