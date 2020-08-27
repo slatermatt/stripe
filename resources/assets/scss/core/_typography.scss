@@ -47,7 +47,7 @@ $body--small: (
 .e-h2 {
 	@include font-size($h--2);
 
-	@apply font-medium;
+	@apply font-medium leading-snug;
 }
 
 .e-h3 {
@@ -59,7 +59,7 @@ $body--small: (
 .e-h4 {
 	@include font-size($h--4);
 
-	@apply font-medium;
+	@apply font-medium leading-normal;
 }
 
 .e-h5 {
