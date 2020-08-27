@@ -13,16 +13,16 @@
 				</div>
 			</div>
 
-			<div class="grid items-start md:grid-cols-2 xl:grid-cols-4">
+			<div class="grid items-start row-gap-8 md:grid-cols-2 xl:grid-cols-4">
 				@foreach ($stats as $stat)
-					<div class="grid row-gap-2">
-						<h2 class="relative e-h3 px-4">
-							<span class="absolute h-full w-px left-0 bg-brand-blue-light"></span>
+					<div class="grid row-gap-2 px-4 sm:pr-8">
+						<h2 class="relative e-h3 leading-none">
+							<span class="absolute h-full w-px -left-4 bg-brand-blue-light"></span>
 		
 							<span class="text-white">{!! $stat['figure'] !!}</span>
 						</h2>
 				
-						<p class="e-body--small px-4 text-off-white">{!! $stat['description'] !!}</p>
+						<p class="e-body--small text-off-white">{!! $stat['description'] !!}</p>
 					</div>
 				@endforeach
 			</div>

@@ -12,7 +12,7 @@
 					<p class="text-off-white px-4">{!! $content !!}</p>
 
 					<div class="grid md:grid-cols-2">
-						<div class="px-4">
+						<div class="space-x-4 px-4">
 							@foreach ($ctas as $cta)
 								<e-button
 									text="{!! $cta['title'] !!}"
@@ -26,25 +26,24 @@
 
 				<div class="grid items-start row-gap-8 lg:grid-cols-2">
 					@foreach ($features as $feature)
-						<div class="grid row-gap-2">
+						<div class="grid row-gap-2 px-4 sm:pr-8">
 							<icon
 								name="{!! $feature['icon'] !!}"
 								size="w-6 h-6 lg:w-10 lg:h-10"
-								class="pl-4"
 							></icon>
 		
-							<h2 class="relative e-h5 text-white px-4">
-								<span class="absolute h-full w-px left-0 bg-brand-blue-light"></span>
+							<h2 class="relative e-h5 text-white">
+								<span class="absolute h-full w-px -left-4 bg-brand-blue-light"></span>
 
 								<span>{!! $feature['title'] !!}</span>
 							</h2>
 					
-							<p class="e-body--small text-off-white px-4">{!! $feature['content'] !!}</p>
+							<p class="e-body--small text-off-white">{!! $feature['content'] !!}</p>
 					
 							<e-button
 								text="{!! $feature['cta']['title'] !!}"
 								href="{!! $feature['cta']['url'] !!}"
-								class="text-brand-blue-light px-4"
+								class="text-brand-blue-light"
 							></e-button>
 						</div>
 					@endforeach

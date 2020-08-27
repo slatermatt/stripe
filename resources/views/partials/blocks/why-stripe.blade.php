@@ -11,22 +11,22 @@
 				</div>
 			</div>
 
-			<div class="grid items-start md:grid-cols-2 xl:grid-cols-4">
+			<div class="grid items-start row-gap-8 md:grid-cols-2 xl:grid-cols-4">
 				@foreach ($features as $feature)
-					<div class="grid row-gap-2">
+					<div class="grid row-gap-2 px-4 sm:pr-8">
 						<icon
 							name="{!! $feature['icon'] !!}"
 							size="w-6 h-6 lg:w-10 lg:h-10"
-							class="pl-4 text-brand-purple"
+							class="text-brand-purple"
 						></icon>
 		
-						<h2 class="relative e-h5 px-4">
-							<span class="absolute h-full w-px left-0 bg-brand-purple"></span>
+						<h2 class="relative e-h5">
+							<span class="absolute h-full w-px -left-4 bg-brand-purple"></span>
 		
 							<span class="text-brand-blue-dark">{!! $feature['title'] !!}</span>
 						</h2>
 				
-						<p class="e-body--small px-4">{!! $feature['content'] !!}</p>
+						<p class="e-body--small">{!! $feature['content'] !!}</p>
 					</div>
 				@endforeach
 			</div>

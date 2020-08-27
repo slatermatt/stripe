@@ -8,14 +8,13 @@
 	
 				<p class="pl-4 pr-8">{!! $content !!}</p>
 	
-				<div class="px-4">
+				<div class="space-x-4 px-4">
 					@foreach ($ctas as $cta)
 						<e-button
 							text="{!! $cta['title'] !!}"
 							href="{!! $cta['url'] !!}"
 							@if ($loop->first)
 								type="primary"
-								class="mr-4"
 							@endif
 						></e-button>
 					@endforeach

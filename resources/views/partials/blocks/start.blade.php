@@ -2,7 +2,7 @@
 	@include('partials/guides')
 
 	<container>
-		<div class="grid grid-cols-4">
+		<div class="grid row-gap-8 md:grid-cols-4">
 			<div class="grid col-span-2 row-gap-6 px-4 sm:pr-24">
 				<h1 class="e-h3">{!! $title !!}</h1>
 			
@@ -23,7 +23,7 @@
 				</div>
 			</div>
 
-			<div class="grid grid-cols-2 col-span-2">
+			<div class="grid row-gap-8 col-span-2 md:grid-cols-2">
 				@foreach ($features as $feature)
 					<div class="grid row-gap-2 px-4 sm:pr-8">
 						<icon

@@ -10,7 +10,7 @@
 					<h1 class="e-h2">{!! $title !!}</h1>
 				</div>
 			</div>
-	
+
 			<div class="grid row-gap-8 md:grid-cols-2">
 				@foreach ($content as $para)
 					<p class="px-4 @if ($loop->last) md:pr-24 @else md:pr-8 @endif">{!! $para['text'] !!}</p>
@@ -18,7 +18,7 @@
 			</div>
 	
 			<div class="grid md:grid-cols-2">
-				<div class="px-4">
+				<div class="space-x-4 px-4">
 					@foreach ($ctas as $cta)
 						<e-button
 							text="{!! $cta['title'] !!}"
@@ -32,11 +32,11 @@
 			<div class="relative h-92 xs:h-118 md:h-191">
 				<div
 					class="
-						absolute -top-24
+						absolute -top-8
 						grid items-start gap-4
 						grid-rows-products grid-cols-products
 						xs:grid-rows-products-xs xs:grid-cols-products-xs xs:gap-6
-						md:grid-rows-products-md md:grid-cols-products-md md:gap-10
+						md:grid-rows-products-md md:grid-cols-products-md md:gap-10 md:-top-24
 					"
 				>
 					<div
