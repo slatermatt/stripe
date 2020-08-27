@@ -7,8 +7,19 @@
 				$data.classList[$props.angle],
 			]"
 		>
-			<div class="absolute w-full h-full top-0 left-0 px-4 pointer-events-none xl:max-w-screen">
-				<div class="grid md:grid-cols-2 relative max-w-container h-full mx-auto lg:grid-cols-4">
+			<div
+				:class="[
+					'absolute w-full h-full top-0 left-0 px-4 pointer-events-none',
+					'xl:max-w-screen',
+				]"
+			>
+				<div
+					:class="[
+						'grid relative max-w-container h-full mx-auto opacity-25',
+						'md:grid-cols-2',
+						'lg:grid-cols-4',
+					]"
+				>
 					<span
 						v-for="(guide, index) in $data.guides"
 						:key="index"
