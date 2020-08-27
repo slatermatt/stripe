@@ -4,7 +4,7 @@
 		'angle' => 'top',
 	])
 
-	<container spacing="pb-20 pt-32 md:pb-32 md:pt-64">
+	<container spacing="pb-20 pt-section md:pb-32">
 		<div class="grid row-gap-8 md:row-gap-12 xl:row-gap-16">
 			<div class="grid sm:grid-cols-2">
 				<div class="grid gap-6 px-4 sm:pr-24 sm:col-span-1">

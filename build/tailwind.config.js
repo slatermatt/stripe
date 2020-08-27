@@ -130,7 +130,8 @@ module.exports = {
 				'28': relative(112),
 				'42': relative(168),
 				'92': relative(368),
-				'section': 'calc(calc(100vw - 0px) * 0.106)',
+				'section-offset': 'calc(calc(100vw - 0px) * 0.106)',
+				'section': 'calc(calc(calc(100vw - 0px) * 0.106) + calc(128 * 1px) - 0.106 * calc((calc(100vw - 0px) - 1080px)/2))',
 			},
 			width: {
 				...widths,

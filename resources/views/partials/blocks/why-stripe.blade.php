@@ -1,10 +1,10 @@
-<section class="relative overflow-hidden -mb-section">
+<section class="relative overflow-hidden -mb-section-offset">
 	@include('partials/guides', [
 		'bg' => 'bg-white',
 		'angle' => 'both',
 	])
 
-	<container spacing="py-32 md:py-64">
+	<container spacing="py-section">
 		<div class="grid row-gap-8 md:row-gap-12 xl:row-gap-16">
 			<div class="grid sm:grid-cols-4">
 				<div class="grid gap-6 sm:col-span-3">
