@@ -130,6 +130,7 @@ module.exports = {
 				'28': relative(112),
 				'42': relative(168),
 				'92': relative(368),
+				'section': 'calc(calc(100vw - 0px) * 0.106)',
 			},
 			width: {
 				...widths,
@@ -141,7 +142,6 @@ module.exports = {
 		container: false,
 		rotate: false,
 		scale: false,
-		skew: false,
 		translate: false,
 	},
 };
