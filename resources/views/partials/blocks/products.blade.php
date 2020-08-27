@@ -1,7 +1,7 @@
 <section class="relative overflow-hidden">
-	@include('partials/guides')
+	@include('partials/guides', ['bg' => 'bg-brand-grey'])
 
-	<container>
+	<container spacing="pt-20 pb-42 md:pt-32 md:pb-64">
 		<div class="grid row-gap-8">
 			<div class="grid md:grid-cols-2">
 				<div class="grid gap-6 px-4">

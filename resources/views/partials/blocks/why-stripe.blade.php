@@ -1,7 +1,7 @@
 <section class="relative overflow-hidden">
 	@include('partials/guides')
 
-	<container>
+	<container spacing="py-32 md:py-64">
 		<div class="grid row-gap-8 md:row-gap-12 xl:row-gap-16">
 			<div class="grid sm:grid-cols-4">
 				<div class="grid gap-6 sm:col-span-3">

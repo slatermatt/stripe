@@ -1,7 +1,7 @@
 <section class="relative overflow-hidden">
 	@include('partials/guides')
 
-	<container>
+	<container spacing="pb-16 md:pb-28">
 		<h1 class="sr-only">{!! $title !!}</h1>
 	
 		<div class="grid grid-cols-2 row-gap-16 md:grid-cols-4">

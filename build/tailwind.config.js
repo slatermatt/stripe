@@ -127,6 +127,8 @@ module.exports = {
 				'1/2em': '.5em',
 				'191': relative(764),
 				'118': relative(472),
+				'28': relative(112),
+				'42': relative(168),
 				'92': relative(368),
 			},
 			width: {

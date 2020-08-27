@@ -1,7 +1,7 @@
 <header class="relative overflow-hidden">
 	@include('partials/guides')
 
-	<container>
+	<container spacing="pb-28 md:pb-32">
 		<div class="grid sm:grid-cols-2 items-center">
 			<div class="grid gap-8">
 				<h1 class="e-h1 pl-4 sm:min-w-title">{!! $title !!}</h1>

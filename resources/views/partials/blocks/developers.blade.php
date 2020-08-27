@@ -1,7 +1,7 @@
 <section class="relative overflow-hidden">
 	@include('partials/guides', ['bg' => 'bg-brand-blue-dark'])
 
-	<container>
+	<container spacing="py-32 md:py-64">
 		<div class="grid row-gap-8 sm:grid-cols-2 items-center">
 			<div class="grid row-gap-16">
 				<div class="grid gap-6">
