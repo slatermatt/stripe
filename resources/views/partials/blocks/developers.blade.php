@@ -5,7 +5,7 @@
 		<div class="grid row-gap-8 sm:grid-cols-2 items-center">
 			<div class="grid row-gap-16">
 				<div class="grid gap-6">
-					<p class="e-h3 text-brand-blue-light px-4">{!! $subTitle !!}</p>
+					<p class="e-h4 text-brand-blue-light px-4">{!! $subTitle !!}</p>
 					
 					<h1 class="e-h2 text-white px-4">{!! $title !!}</h1>
 

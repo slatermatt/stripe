@@ -5,7 +5,7 @@
 		<div class="grid row-gap-8 md:row-gap-12 xl:row-gap-16">
 			<div class="grid sm:grid-cols-4">
 				<div class="grid gap-6 sm:col-span-3">
-					<p class="e-h3 text-brand-purple px-4">{!! $subTitle !!}</p>
+					<p class="e-h4 text-brand-purple px-4">{!! $subTitle !!}</p>
 					
 					<h1 class="e-h2 px-4">{!! $title !!}</h1>
 				</div>

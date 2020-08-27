@@ -1,21 +1,21 @@
 $h--1: (
-	base: '3xl',
-	xs: '4xl',
-	md: '5xl',
-	xl: '6xl',
+	base: '4xl',
+	xs: '5xl',
+	md: '6xl',
+	xl: '7xl',
 );
 
 $h--2: (
-	base: 'xl',
-	xl: '2xl',
+	base: '2xl',
+	xl: '3xl',
 );
 
 $h--3: (
-	base: 'base',
+	base: 'xl',
 );
-
+	
 $h--4: (
-	base: 'sm',
+	base: 'base',
 );
 
 $h--5: (
@@ -53,13 +53,13 @@ $body--small: (
 .e-h3 {
 	@include font-size($h--3);
 
-	@apply font-medium;
+	@apply font-medium leading-normal;
 }
 
 .e-h4 {
 	@include font-size($h--4);
 
-	@apply font-light;
+	@apply font-medium;
 }
 
 .e-h5 {
