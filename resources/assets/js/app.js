@@ -15,6 +15,8 @@ import Icon from './components/common/Icon';
 import IconText from './components/common/IconText';
 import Pagination from './components/common/Pagination';
 import Placeholder from './components/common/Placeholder';
+import Container from './components/common/Container';
+import Guides from './components/common/Guides';
 
 // Accounts
 // import ForgotPasswordForm from './components/accounts/ForgotPasswordForm';
@@ -34,6 +36,8 @@ Vue.component('Icon', Icon);
 Vue.component('IconText', IconText);
 Vue.component('Pagination', Pagination);
 Vue.component('Placeholder', Placeholder);
+Vue.component('Container', Container);
+Vue.component('Guides', Guides);
 
 new Vue({
 	el: '#app',

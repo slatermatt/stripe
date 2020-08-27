@@ -6,14 +6,55 @@ button {
 
 .e-button {
 	@apply
+		leading-normal
 		inline-block
 		relative
-		p-4
-		bg-brand-red
-		text-white
-		font-body
-		text-base
-		font-normal
-		leading-none
 		no-underline;
+
+		padding: 3px 0 6px 0;
+
+	&--primary {
+		@apply
+			rounded-button
+			bg-brand-blue-dark
+			text-white
+			transition-opacity
+			duration-200;
+
+		padding: 3px 12px 6px 16px;
+
+		&:hover {
+			@apply opacity-75;
+		}
+	}
+
+	&--secondary {
+		@apply
+			rounded-button
+			bg-brand-purple
+			text-white
+			transition-colors
+			duration-200;
+
+		padding: 3px 12px 6px 16px;
+
+		&:hover {
+			@apply bg-brand-blue-dark;
+		}
+	}
+
+	&--tertiary {
+		@apply
+			rounded-button
+			bg-brand-blue-light
+			text-brand-blue-dark
+			transition-colors
+			duration-200;
+
+		padding: 3px 12px 6px 16px;
+
+		&:hover {
+			@apply bg-white;
+		}
+	}
 }

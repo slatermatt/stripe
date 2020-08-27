@@ -1,10 +1,19 @@
 <template>
 	<component
 		:is="cElement"
-		class="e-button"
+		:class="[
+			'e-button e-h5',
+			cType,
+		]"
 		:href="$props.href"
-		v-html="$props.text"
-	/>
+	>
+		<icon-text
+			:text="$props.text"
+			:icon="$props.icon"
+			icon-after
+			inline
+		/>
+	</component>
 </template>
 
 <script>
@@ -19,11 +28,27 @@
 				type: String,
 				default: null,
 			},
+
+			icon: {
+				type: String,
+				default: 'chevron-right',
+			},
+
+			type: {
+				type: String,
+				default: null,
+			},
 		},
 
 		computed: {
-			cElement: function () {
-				return this.href ? 'a' : 'button';
+			cElement() {
+				return this.$props.href ? 'a' : 'button';
+			},
+
+			cType() {
+				return this.$props.type
+					? `e-button--${this.$props.type}`
+					: null;
 			},
 		},
 	};

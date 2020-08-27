@@ -62,6 +62,17 @@ return [
 								],
 							],
 						],
+						'helvetica-neue' => [
+							'heading' => 'Helvetica Neue',
+							'copy' => 'Exercitation reprehenderit quis reprehenderit nisi in dolor. Ipsum quis veniam ipsum laboris nisi.',
+							'partial' => 'foundation/fonts',
+							'style' => 'font-family: "Helvetica Neue"',
+							'attributes' => [
+								[
+									'weights' => [400, 500, 700],
+								],
+							],
+						],
 					],
 				],
 				'colour' => [
@@ -133,138 +144,35 @@ return [
 			'heading' => 'Blocks',
 			'copy' => 'More complex components',
 			'blocks' => [
-				'breadcrumb' => [
-					'heading' => 'Breadcrumb',
+				'button' => [
+					'heading' => 'Button',
 					'previews' => [
 						[
 							'component' => [
-								'name' => 'breadcrumb',
-								'type' => 'vue',
-							],
-							'autoload' => false,
-							'attributes' => [
-								[
-									'pages' => [
-										[
-											'title' => 'Home',
-											'url' => '#',
-										],
-										[
-											'title' => 'Parent page',
-											'url' => '#',
-										],
-										[
-											'title' => 'Current page',
-											'url' => '#',
-										],
-									],
-								],
-							],
-						],
-					],
-				],
-				'pagination' => [
-					'heading' => 'Pagination',
-					'previews' => [
-						[
-							'component' => [
-								'name' => 'pagination',
+								'name' => 'e-button',
 								'type' => 'vue',
 							],
 							'autoload' => false,
 							'container' => true,
 							'attributes' => [
 								[
-									'pages' => [
-										[
-											'title' => 'First',
-											'type' => 'jump',
-											'disabled' => true,
-										],
-										[
-											'title' => 'Prev',
-											'type' => 'prev',
-											'disabled' => true,
-										],
-										[
-											'title' => '1',
-											'url' => '#',
-											'current' => true,
-										],
-										[
-											'title' => '2',
-											'url' => '#',
-										],
-										[
-											'title' => '3',
-											'url' => '#',
-										],
-										[
-											'title' => '&hellip;',
-											'type' => 'gap',
-										],
-										[
-											'title' => '40',
-											'url' => '#',
-											'type' => 'page-end'
-										],
-										[
-											'title' => '41',
-											'url' => '#',
-											'type' => 'page-end'
-										],
-										[
-											'title' => '42',
-											'url' => '#',
-											'type' => 'page-end'
-										],
-										[
-											'title' => 'Next',
-											'url' => '#',
-											'type' => 'next',
-										],
-										[
-											'title' => 'Last',
-											'url' => '#',
-											'type' => 'jump',
-										],
-									],
-								],
-							],
-						],
-					],
-				],
-				'placeholder' => [
-					'heading' => 'Placeholders',
-					'previews' => [
-						[
-							'component' => [
-								'name' => 'placeholder',
-								'type' => 'blade',
-							],
-							'autoload' => false,
-							'stack' => true,
-							'style' => 'width: 200px',
-							'attributes' => [
-								[
-									'modifier' => null,
-									'src' => '//placehold.it/400x225',
-									'title' => 'Alt text',
+									'text' => 'Start now',
+									'type' => 'primary',
 								],
 								[
-									'modifier' => '3/4',
-									'src' => '//placehold.it/400x300',
-									'title' => 'Alt text',
+									'text' => 'Contact sales',
 								],
 								[
-									'modifier' => '4/3',
-									'src' => '//placehold.it/300x400',
-									'title' => 'Alt text',
+									'text' => 'Start with payments',
+									'type' => 'secondary',
 								],
 								[
-									'modifier' => 'full',
-									'src' => '//placehold.it/400',
-									'title' => 'Alt text',
+									'text' => 'Read the docs',
+									'type' => 'tertiary',
+								],
+								[
+									'text' => 'Contact Sales',
+									'class' => 'text-brand-purple',
 								],
 							],
 						],

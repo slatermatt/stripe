@@ -2,17 +2,22 @@
 	"browser-default-font-size": 16,
 	"breakpoints": {
 		"xs": 375,
-		"sm": 560,
+		"sm": 600,
 		"md": 768,
 		"lg": 1024,
 		"xl": 1248
 	},
 	"colors": {
 		"brand": {
-			"red": "#ff585d"
+			"blue-dark": "#0a2540",
+			"blue-light": "#00d4ff",
+			"purple": "#635bff",
+			"grey": "#f6f9fc",
+			"body": "#425466"
 		},
 		"black": "#000",
 		"white": "#fff",
+		"off-white": "#adbdcc",
 		"grey": {
 			"100": "#fafafa",
 			"200": "#eee",

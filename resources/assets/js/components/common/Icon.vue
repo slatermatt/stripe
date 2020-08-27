@@ -1,6 +1,9 @@
 <template>
 	<sprite
-		class="inline-block w-em h-em fill-current align-top"
+		:class="[
+			'inline-block fill-current align-top',
+			$props.size,
+		]"
 		:name="$props.name"
 	/>
 </template>
@@ -17,6 +20,11 @@
 			name: {
 				type: String,
 				required: true,
+			},
+
+			size: {
+				type: String,
+				default: 'w-em h-em',
 			},
 		},
 	};

@@ -14,7 +14,7 @@
 				],
 			],
 			'image' => [
-				'url' => '//placehold.it/1600x900',
+				'url' => '//placehold.it/1000',
 				'alt' => 'Infographic of payment system & stats displayed in charts',
 			],
 		],
@@ -75,9 +75,27 @@
 							'url' => route('templates.show', 'payments/index'),
 						],
 					],
-					'image' => [
-						'url' => '//placehold.it/1600x900',
-						'alt' => 'Infographic of payment system | Bank card | Calculator',
+					'gallery' => [
+						'card' => [
+							'url' => '//placehold.it/383x237?text=card',
+							'alt' => 'Bank card',
+						],
+						'invoice' => [
+							'url' => '//placehold.it/590x424?text=invoice',
+							'alt' => 'Infographic of invoice payment system',
+						],
+						'phone' => [
+							'url' => '//placehold.it/302x618?text=phone',
+							'alt' => 'Phone payment',
+						],
+						'web' => [
+							'url' => '//placehold.it/1024x540?text=web',
+							'alt' => 'Infographic of web control panel',
+						],
+						'calculator' => [
+							'url' => '//placehold.it/304x566?text=calc',
+							'alt' => 'Calculator',
+						],
 					],
 				],
 			],
@@ -95,7 +113,8 @@
 					],
 					'features' => [
 						[
-							'icon' => 'settings',
+							// 'icon' => 'settings',
+							'icon' => 'chevron-right',
 							'title' => 'Tools for every stack',
 							'content' => 'We offer client and server libraries in everything from React and PHP to .NET and iOS.',
 							'cta' => [
@@ -104,7 +123,8 @@
 							],
 						],
 						[
-							'icon' => 'boxes',
+							// 'icon' => 'boxes',
+							'icon' => 'chevron-up',
 							'title' => 'Prebuilt integrations',
 							'content' => 'Use integrations for systems like Shopify, WooCommerce, NetSuite, and more.',
 							'cta' => [
@@ -114,7 +134,7 @@
 						],
 					],
 					'image' => [
-						'url' => '//placehold.it/1600x900',
+						'url' => '//placehold.it/550x660',
 						'alt' => 'Simple code snippet',
 					],
 				],
@@ -126,22 +146,26 @@
 					'title' => 'A technology-first approach to payments and finance',
 					'features' => [
 						[
-							'icon' => 'hexagon',
+							// 'icon' => 'hexagon',
+							'icon' => 'chevron-up',
 							'title' => 'Close to the metal',
 							'content' => 'From <a href="/">direct integrations</a> with card networks and banks to checkout flows in the browser, we operate on and optimize at every level of the financial stack.',
 						],
 						[
-							'icon' => 'fast-forward',
+							// 'icon' => 'fast-forward',
+							'icon' => 'chevron-down',
 							'title' => 'Fastest-improving platform',
 							'content' => 'We release <a href="/">hundreds of features</a> and improvements each year to help you stay ahead of industry shifts. (On average, we deploy our production API 16x per day.)',
 						],
 						[
-							'icon' => 'ecg-check',
+							// 'icon' => 'ecg-check',
+							'icon' => 'chevron-left',
 							'title' => 'Battle-tested reliability',
 							'content' => 'Our systems operate with <a href="/">99.9%+</a> uptime and are highly scalable and redundant. Stripe is certified to the highest compliance standards.',
 						],
 						[
-							'icon' => 'cogs',
+							// 'icon' => 'cogs',
+							'icon' => 'chevron-right',
 							'title' => 'Intelligent optimizations',
 							'content' => 'Our machine learning models train on <a href="/">billions</a> of data points and help increase revenue across conversion, fraud, revenue recovery, and more.',
 						],
@@ -190,7 +214,8 @@
 			],
 			'features' => [
 				[
-					'icon' => 'pricetag',
+					// 'icon' => 'pricetag',
+					'icon' => 'chevron-right',
 					'title' => 'Always know what you pay',
 					'content' => 'Integrated per-transaction pricing with no hidden fees.',
 					'cta' => [
@@ -199,7 +224,8 @@
 					],
 				],
 				[
-					'icon' => 'code',
+					// 'icon' => 'code',
+					'icon' => 'chevron-up',
 					'title' => 'Start your integration',
 					'content' => 'Get up and running with Stripe in as little as 10 minutes.',
 					'cta' => [

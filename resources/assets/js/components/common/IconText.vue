@@ -1,10 +1,19 @@
 <template>
 	<div class="flex items-center">
-		<icon v-if="!iconAfter" :name="icon" />
+		<icon
+			v-if="!iconAfter"
+			:name="icon"
+		/>
 
-		<span class="ml-1" v-html="text" />
+		<span
+			:class="iconAfter ? 'mr-2' : 'ml-2'"
+			v-html="text"
+		/>
 
-		<icon v-if="iconAfter" :name="icon" class="ml-1" />
+		<icon
+			v-if="iconAfter"
+			:name="icon"
+		/>
 	</div>
 </template>
 

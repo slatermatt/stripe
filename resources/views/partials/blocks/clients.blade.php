@@ -1,17 +1,20 @@
-<section>
-	<h1 class="sr-only">{!! $title !!}</h1>
+<section class="relative overflow-hidden">
+	@include('partials/guides')
 
-	<div class="e-grid">
-		@foreach ($items as $item)
-			<div class="e-grid__item mt-5 md:w-6/24">
-				<h2>{!! $item['title'] !!}</h2>
-
-				<placeholder class="pt-4/14">
-					{{-- <icon name="{!! $item['name'] !!}"></icon> --}}
+	<container spacing="pb-16 md:pb-28">
+		<h1 class="sr-only">{!! $title !!}</h1>
 	
-					<img src="//placehold.it/140x40" alt="placeholder">
-				</placeholder>
-			</div>
-		@endforeach
-	</div>
+		<div class="grid grid-cols-2 row-gap-16 md:grid-cols-4">
+			@foreach ($items as $item)
+				<div class="flex items-center justify-center">
+					<h2 class="sr-only">{!! $item['title'] !!}</h2>
+
+					<icon
+						name="{!! $item['name'] !!}"
+						size="w-auto h-8 md:h-10"
+					></icon>
+				</div>
+			@endforeach
+		</div>
+	</container>
 </section>
