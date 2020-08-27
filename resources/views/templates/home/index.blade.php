@@ -214,7 +214,8 @@
 			],
 			'features' => [
 				[
-					'icon' => 'pricetag',
+					// 'icon' => 'pricetag',
+					'icon' => 'chevron-right',
 					'title' => 'Always know what you pay',
 					'content' => 'Integrated per-transaction pricing with no hidden fees.',
 					'cta' => [
@@ -223,7 +224,8 @@
 					],
 				],
 				[
-					'icon' => 'code',
+					// 'icon' => 'code',
+					'icon' => 'chevron-up',
 					'title' => 'Start your integration',
 					'content' => 'Get up and running with Stripe in as little as 10 minutes.',
 					'cta' => [
