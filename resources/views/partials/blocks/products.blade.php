@@ -1,5 +1,8 @@
-<section class="relative overflow-hidden">
-	@include('partials/guides', ['bg' => 'bg-brand-grey'])
+<section class="relative overflow-hidden -mb-section">
+	@include('partials/guides', [
+		'bg' => 'bg-brand-grey',
+		'angle' => 'bottom',
+	])
 
 	<container spacing="pt-20 pb-42 md:pt-32 md:pb-64">
 		<div class="grid row-gap-8">

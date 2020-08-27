@@ -1,5 +1,8 @@
 <section class="relative overflow-hidden">
-	@include('partials/guides', ['bg' => 'bg-brand-blue-dark'])
+	@include('partials/guides', [
+		'bg' => 'bg-brand-blue-dark',
+		'angle' => 'top',
+	])
 
 	<container spacing="pb-20 pt-32 md:pb-32 md:pt-64">
 		<div class="grid row-gap-8 md:row-gap-12 xl:row-gap-16">

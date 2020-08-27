@@ -1,5 +1,8 @@
-<section class="relative overflow-hidden">
-	@include('partials/guides', ['bg' => 'bg-brand-blue-dark'])
+<section class="relative overflow-hidden -mb-section">
+	@include('partials/guides', [
+		'bg' => 'bg-brand-blue-dark',
+		'angle' => 'both',
+	])
 
 	<container spacing="py-32 md:py-64">
 		<div class="grid row-gap-8 sm:grid-cols-2 items-center">
@@ -26,26 +29,14 @@
 
 				<div class="grid items-start row-gap-8 lg:grid-cols-2">
 					@foreach ($features as $feature)
-						<div class="grid row-gap-2 px-4 sm:pr-8">
-							<icon
-								name="{!! $feature['icon'] !!}"
-								size="w-6 h-6 lg:w-10 lg:h-10"
-							></icon>
-		
-							<h2 class="relative e-h5 text-white">
-								<span class="absolute h-full w-px -left-4 bg-brand-blue-light"></span>
-
-								<span>{!! $feature['title'] !!}</span>
-							</h2>
-					
-							<p class="e-body--small text-off-white">{!! $feature['content'] !!}</p>
-					
-							<e-button
-								text="{!! $feature['cta']['title'] !!}"
-								href="{!! $feature['cta']['url'] !!}"
-								class="text-brand-blue-light"
-							></e-button>
-						</div>
+						@include('partials/feature', [
+							'feature' => $feature,
+							'classList' => [
+								'accent' => 'brand-blue-light',
+								'title' => 'text-white',
+								'content' => 'text-off-white',
+							],
+						])
 					@endforeach
 				</div>
 			</div>
