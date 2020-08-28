@@ -55,6 +55,12 @@ new Vue({
 		// ExampleStyleguideOnlyComponent,
 	},
 
+	data() {
+		return {
+			navOpen: false,
+		};
+	},
+
 	mounted() {
 		svg4everybody();
 	},

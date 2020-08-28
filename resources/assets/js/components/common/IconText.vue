@@ -1,5 +1,10 @@
 <template>
-	<div class="flex items-center">
+	<div
+		:class="[
+			'items-center',
+			$props.inline ? 'inline-flex' : 'flex',
+		]"
+	>
 		<icon
 			v-if="!iconAfter"
 			:name="icon"
