@@ -10,6 +10,7 @@
 		<icon-text
 			:text="$props.text"
 			:icon="$props.icon"
+			:icon-size="$props.iconSize"
 			icon-after
 			inline
 		/>
@@ -21,7 +22,7 @@
 		props: {
 			text: {
 				type: String,
-				required: true,
+				default: null,
 			},
 
 			href: {
@@ -32,6 +33,11 @@
 			icon: {
 				type: String,
 				default: 'chevron-right',
+			},
+
+			iconSize: {
+				type: String,
+				default: null,
 			},
 
 			type: {

@@ -7,16 +7,19 @@
 	>
 		<icon
 			v-if="!iconAfter"
+			:size="iconSize"
 			:name="icon"
 		/>
 
 		<span
+			v-if="text"
 			:class="iconAfter ? 'mr-2' : 'ml-2'"
 			v-html="text"
 		/>
 
 		<icon
 			v-if="iconAfter"
+			:size="iconSize"
 			:name="icon"
 		/>
 	</div>
@@ -33,6 +36,11 @@
 			icon: {
 				type: String,
 				required: true,
+			},
+
+			iconSize: {
+				type: String,
+				default: null,
 			},
 
 			iconAfter: Boolean,
