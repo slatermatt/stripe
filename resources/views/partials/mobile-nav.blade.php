@@ -1,4 +1,8 @@
-<button @click="$root.$data.navOpen = true">🍔</button>
+<e-button
+	@click.native="$root.$data.navOpen = true"
+	icon="burger"
+	type="icon"
+></e-button>
 
 <nav
 	v-if="$root.$data.navOpen"
@@ -7,7 +11,11 @@
 	<div class="flex items-center justify-between px-6 pt-6">
 		<h1>{!! $nav['title'] !!}</h1>
 
-		<button @click="$root.$data.navOpen = false">❌</button>
+		<e-button
+			@click.native="$root.$data.navOpen = false"
+			icon="close"
+			icon-size="w-10 h-10"
+		></e-button>
 	</div>
 
 	<div class="border-b border-dashed border-brand-grey pb-6 mt-2">
