@@ -368,6 +368,161 @@ class PageDefaultsViewComposer extends BaseViewComposer
                     'url' => route('templates.show', 'sign-in/index'),
                 ],
             ],
+            'footer' => [
+                'products' => [
+                    'title' => 'Products',
+                    'items' => [
+                        [
+                            'title' => 'Payments',
+                            'url' => route('templates.show', 'foo/view'),
+                        ],
+                        [
+                            'title' => 'Billing',
+                            'url' => route('templates.show', 'foo/view'),
+                        ],
+                        [
+                            'title' => 'Connect',
+                            'url' => route('templates.show', 'foo/view'),
+                        ],
+                        [
+                            'title' => 'Payouts',
+                            'url' => route('templates.show', 'foo/view'),
+                        ],
+                        [
+                            'title' => 'Atlas',
+                            'url' => route('templates.show', 'foo/view'),
+                        ],
+                        [
+                            'title' => 'Radar',
+                            'url' => route('templates.show', 'foo/view'),
+                        ],
+                        [
+                            'title' => 'Issuing',
+                            'url' => route('templates.show', 'foo/view'),
+                        ],
+                        [
+                            'title' => 'Terminal',
+                            'url' => route('templates.show', 'foo/view'),
+                        ],
+                        [
+                            'title' => 'Corporate Card',
+                            'url' => route('templates.show', 'foo/view'),
+                        ],
+                        [
+                            'title' => 'Capital',
+                            'url' => route('templates.show', 'foo/view'),
+                        ],
+                        [
+                            'title' => 'Sigma',
+                            'url' => route('templates.show', 'foo/view'),
+                        ],
+                        [
+                            'title' => 'Pricing',
+                            'url' => route('templates.show', 'foo/view'),
+                        ],
+                    ],
+                ],
+                'developers' => [
+                    'title' => 'Developers',
+                    'items' => [
+                        [
+                            'title' => 'Documentation',
+                            'url' => route('templates.show', 'foo/view'),
+                        ],
+                        [
+                            'title' => 'API reference',
+                            'url' => route('templates.show', 'foo/view'),
+                        ],
+                        [
+                            'title' => 'API status',
+                            'url' => route('templates.show', 'foo/view'),
+                        ],
+                    ],
+                ],
+                'company' => [
+                    'title' => 'Company',
+                    'items' => [
+                        [
+                            'title' => 'About',
+                            'url' => route('templates.show', 'foo/view'),
+                        ],
+                        [
+                            'title' => 'Customers',
+                            'url' => route('templates.show', 'foo/view'),
+                        ],
+                        [
+                            'title' => 'Partners',
+                            'url' => route('templates.show', 'foo/view'),
+                        ],
+                        [
+                            'title' => 'Environment',
+                            'url' => route('templates.show', 'foo/view'),
+                        ],
+                        [
+                            'title' => 'Jobs',
+                            'url' => route('templates.show', 'foo/view'),
+                        ],
+                        [
+                            'title' => 'Blog',
+                            'url' => route('templates.show', 'foo/view'),
+                        ],
+                        [
+                            'title' => 'Newsroom',
+                            'url' => route('templates.show', 'foo/view'),
+                        ],
+                    ],
+                ],
+                'use-cases' => [
+                    'title' => 'Use cases',
+                    'items' => [
+                        [
+                            'title' => 'SaaS',
+                            'url' => route('templates.show', 'foo/view'),
+                        ],
+                        [
+                            'title' => 'Platforms',
+                            'url' => route('templates.show', 'foo/view'),
+                        ],
+                        [
+                            'title' => 'Marketplaces',
+                            'url' => route('templates.show', 'foo/view'),
+                        ],
+                        [
+                            'title' => 'Enterprise',
+                            'url' => route('templates.show', 'foo/view'),
+                        ],
+                    ],
+                ],
+                'resources' => [
+                    'title' => 'Resources',
+                    'items' => [
+                        [
+                            'title' => 'Covid-19 resources',
+                            'url' => route('templates.show', 'foo/view'),
+                        ],
+                        [
+                            'title' => 'Support',
+                            'url' => route('templates.show', 'foo/view'),
+                        ],
+                        [
+                            'title' => 'Contact',
+                            'url' => route('templates.show', 'foo/view'),
+                        ],
+                        [
+                            'title' => 'Guides',
+                            'url' => route('templates.show', 'foo/view'),
+                        ],
+                        [
+                            'title' => 'Privacy & terms',
+                            'url' => route('templates.show', 'foo/view'),
+                        ],
+                        [
+                            'title' => 'Sitemap',
+                            'url' => route('templates.show', 'foo/view'),
+                        ],
+                    ],
+                ],
+            ],
         ];
     }
 }
