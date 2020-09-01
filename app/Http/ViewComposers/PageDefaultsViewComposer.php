@@ -358,6 +358,14 @@ class PageDefaultsViewComposer extends BaseViewComposer
                             ],
                         ],
                     ],
+                    'pricing' => [
+                        'title' => 'Pricing',
+                        'url' => route('templates.show', 'pricing/index'),
+                    ],
+                ],
+                'cta' => [
+                    'title' => 'Sign in',
+                    'url' => route('templates.show', 'sign-in/index'),
                 ],
             ],
         ];
