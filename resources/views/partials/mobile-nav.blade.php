@@ -9,7 +9,7 @@
 	class="absolute top-0 left-0 bg-white w-full mt-4 rounded-lg overflow-hidden shadow-card"
 >
 	<div class="flex items-center justify-between px-6 pt-6">
-		<h1>{!! $nav['title'] !!}</h1>
+		<h1 class="uppercase text-xs font-medium text-grey-600">{!! $nav['title'] !!}</h1>
 
 		<e-button
 			@click.native="$root.$data.navOpen = false"
@@ -21,8 +21,8 @@
 	<div class="border-b border-dashed border-brand-grey pb-6 mt-2">
 		<ul class="grid grid-cols-2 px-6">
 			@foreach ($nav['primary'] as $item)
-				<li>
-					<a href="{!! $item['url'] !!}">
+				<li class="e-h5 leading-loose">
+					<a href="{!! $item['url'] !!}" class="p-1 no-underline">
 						<icon-text
 							icon="{!! $item['icon'] !!}"
 							text="{!! $item['title'] !!}"
@@ -37,8 +37,8 @@
 	<div class="my-6">
 		<ul class="grid grid-cols-2 px-6">
 			@foreach ($nav['secondary'] as $item)
-				<li>
-					<a href="{!! $item['url'] !!}">
+				<li class="e-h5 leading-loose">
+					<a href="{!! $item['url'] !!}" class="p-1 no-underline">
 						<icon-text
 							icon="{!! $item['icon'] !!}"
 							text="{!! $item['title'] !!}"
