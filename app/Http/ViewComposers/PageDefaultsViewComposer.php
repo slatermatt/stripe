@@ -300,6 +300,7 @@ class PageDefaultsViewComposer extends BaseViewComposer
                         ],
                     ],
                     'company' => [
+                        'title' => 'Company',
                         'links' => [
                             [
                                 'icon' => 'chevron-up',
