@@ -26,6 +26,7 @@
 						<e-button
 							text="{!! $cta['title'] !!}"
 							href="{!! $cta['url'] !!}"
+							icon="chevron-right"
 							type="secondary"
 						></e-button>
 					@endforeach

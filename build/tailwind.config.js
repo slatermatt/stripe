@@ -42,6 +42,7 @@ module.exports = {
 			none: 'none',
 			focus: `0 0 5px ${colors.blue}`,
 			outline: `0 0 3px ${colors.blue}, 0 0 6px ${colors.blue}, 0 0 9px ${colors.blue}`,
+			card: '0 30px 60px -12px rgba(50,50,93,0.25),0 18px 36px -18px rgba(0,0,0,0.3)',
 		},
 		fontSize: {
 			xs: relative(15),
@@ -107,10 +108,11 @@ module.exports = {
 				copy: '35em',
 				screen: '100vw',
 				phone: relative(300),
+				'logo-xl': relative(60),
 			},
 			padding: {
 				full: '100%',
-				logo: ratio(300, 87),
+				logo: ratio(60, 25),
 				'9/16': ratio(16, 9),
 				'4/14': ratio(14, 4),
 				'3/4': ratio(4, 3),

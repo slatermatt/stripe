@@ -2,7 +2,7 @@
 	<sprite
 		:class="[
 			'inline-block fill-current align-top',
-			$props.size,
+			cSize,
 		]"
 		:name="$props.name"
 	/>
@@ -24,7 +24,17 @@
 
 			size: {
 				type: String,
-				default: 'w-em h-em',
+				default: null,
+			},
+		},
+
+		computed: {
+			cSize() {
+				const { size } = this.$props;
+
+				if (size && size != null) return size;
+
+				return 'w-em h-em';
 			},
 		},
 	};

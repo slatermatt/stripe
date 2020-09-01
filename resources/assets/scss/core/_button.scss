@@ -57,4 +57,21 @@ button {
 			@apply bg-white;
 		}
 	}
+
+	&--icon {
+		@apply
+			inline-flex
+			items-center
+			rounded-button
+			bg-grey-300
+			text-white
+			transition-colors
+			duration-200
+			px-4
+			py-2;
+
+		&:hover {
+			@apply bg-grey-200;
+		}
+	}
 }

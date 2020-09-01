@@ -4,7 +4,7 @@
 		'angle' => 'bottom',
 	])
 
-	<container spacing="pt-20 pb-32 md:pb-64 md:pt-32">
+	<container spacing="pt-20 pb-32 md:pt-32">
 		<div class="grid row-gap-8 md:grid-cols-4">
 			<div class="grid col-span-2 row-gap-6 px-4 sm:pr-24">
 				<h1 class="e-h3">{!! $title !!}</h1>
@@ -16,6 +16,7 @@
 						<e-button
 							text="{!! $cta['title'] !!}"
 							href="{!! $cta['url'] !!}"
+							icon="chevron-right"
 							@if ($loop->first)
 								type="secondary"
 							@else

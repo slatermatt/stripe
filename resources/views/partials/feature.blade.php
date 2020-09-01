@@ -17,6 +17,7 @@
 		<e-button
 			text="{!! $feature['cta']['title'] !!}"
 			href="{!! $feature['cta']['url'] !!}"
+			icon="chevron-right"
 			class="text-{!! $classList['accent'] !!}"
 		></e-button>
 	@endif

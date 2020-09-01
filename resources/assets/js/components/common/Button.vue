@@ -8,10 +8,17 @@
 		:href="$props.href"
 	>
 		<icon-text
+			v-if="$props.icon"
 			:text="$props.text"
 			:icon="$props.icon"
+			:icon-size="$props.iconSize"
 			icon-after
 			inline
+		/>
+
+		<span
+			v-else
+			v-text="$props.text"
 		/>
 	</component>
 </template>
@@ -21,7 +28,7 @@
 		props: {
 			text: {
 				type: String,
-				required: true,
+				default: null,
 			},
 
 			href: {
@@ -31,7 +38,12 @@
 
 			icon: {
 				type: String,
-				default: 'chevron-right',
+				default: null,
+			},
+
+			iconSize: {
+				type: String,
+				default: null,
 			},
 
 			type: {

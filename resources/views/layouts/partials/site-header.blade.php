@@ -1,7 +1,24 @@
 <header class="relative z-site-header">
-	<div class="e-container">
-		<h1>
-			<a href="{{ $links['home'] }}">Project name</a>
-		</h1>
-	</div>
+	<container>
+		<div class="relative flex items-center justify-between px-4 pt-8 pb-3 md:py-3">
+			@include('partials/logo')
+
+			<div class="hidden md:block">
+				@include('partials/desktop-nav', ['nav' => $nav['desktop']])
+			</div>
+
+			<div class="hidden md:block">
+				<e-button
+					text="{!! $nav['cta']['title'] !!}"
+					href="{!! $nav['cta']['url'] !!}"
+					icon="chevron-right"
+					type="secondary"
+				></e-button>
+			</div>
+
+			<div class="block md:hidden">
+				@include('partials/mobile-nav', ['nav' => $nav['mobile']])
+			</div>
+		</div>
+	</container>
 </header>

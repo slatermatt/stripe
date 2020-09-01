@@ -1,18 +1,26 @@
 <template>
-	<div class="flex items-center">
+	<div
+		:class="[
+			'items-center',
+			$props.inline ? 'inline-flex' : 'flex',
+		]"
+	>
 		<icon
-			v-if="!iconAfter"
-			:name="icon"
+			v-if="!$props.iconAfter"
+			:size="$props.iconSize"
+			:name="$props.icon"
 		/>
 
 		<span
-			:class="iconAfter ? 'mr-2' : 'ml-2'"
-			v-html="text"
+			v-if="$props.text"
+			:class="$props.iconAfter ? 'mr-2' : 'ml-2'"
+			v-html="$props.text"
 		/>
 
 		<icon
-			v-if="iconAfter"
-			:name="icon"
+			v-if="$props.iconAfter"
+			:size="$props.iconSize"
+			:name="$props.icon"
 		/>
 	</div>
 </template>
@@ -22,12 +30,17 @@
 		props: {
 			text: {
 				type: String,
-				required: true,
+				default: null,
 			},
 
 			icon: {
 				type: String,
 				required: true,
+			},
+
+			iconSize: {
+				type: String,
+				default: null,
 			},
 
 			iconAfter: Boolean,
