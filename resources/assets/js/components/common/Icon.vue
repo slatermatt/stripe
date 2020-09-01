@@ -32,9 +32,7 @@
 			cSize() {
 				const { size } = this.$props;
 
-				if (size && size != null) {
-					return size;
-				}
+				if (size && size != null) return size;
 
 				return 'w-em h-em';
 			},

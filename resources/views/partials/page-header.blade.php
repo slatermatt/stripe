@@ -13,6 +13,7 @@
 						<e-button
 							text="{!! $cta['title'] !!}"
 							href="{!! $cta['url'] !!}"
+							icon="chevron-right"
 							@if ($loop->first)
 								type="primary"
 							@endif

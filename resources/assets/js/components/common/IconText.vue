@@ -6,21 +6,21 @@
 		]"
 	>
 		<icon
-			v-if="!iconAfter"
-			:size="iconSize"
-			:name="icon"
+			v-if="!$props.iconAfter"
+			:size="$props.iconSize"
+			:name="$props.icon"
 		/>
 
 		<span
-			v-if="text"
-			:class="iconAfter ? 'mr-2' : 'ml-2'"
-			v-html="text"
+			v-if="$props.text"
+			:class="$props.iconAfter ? 'mr-2' : 'ml-2'"
+			v-html="$props.text"
 		/>
 
 		<icon
-			v-if="iconAfter"
-			:size="iconSize"
-			:name="icon"
+			v-if="$props.iconAfter"
+			:size="$props.iconSize"
+			:name="$props.icon"
 		/>
 	</div>
 </template>
