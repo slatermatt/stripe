@@ -1,5 +1,8 @@
 <section class="relative overflow-hidden">
-	@include('partials/guides')
+	@include('partials/guides', [
+		'bg' => 'bg-white',
+		'guideColour' => 'border-off-white border-opacity-25',
+	])
 
 	<container spacing="pb-16 md:pb-28">
 		<h1 class="sr-only">{!! $title !!}</h1>

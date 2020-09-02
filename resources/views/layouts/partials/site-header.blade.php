@@ -1,4 +1,4 @@
-<header class="relative z-site-header">
+<header class="absolute w-full z-site-header">
 	<container>
 		<div class="relative flex items-center justify-between px-4 pt-8 pb-3 md:py-3">
 			@include('partials/logo')

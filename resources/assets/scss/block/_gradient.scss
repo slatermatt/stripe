@@ -1,0 +1,7 @@
+.gradient {
+	&__offset {
+		@media screen and (min-width: 1112px) {
+			left: calc(calc((calc(100vw - 0px) - 1080px) / 2) * -1) !important;
+		}
+	}
+}

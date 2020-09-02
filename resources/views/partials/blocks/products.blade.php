@@ -1,6 +1,7 @@
 <section class="relative overflow-hidden -mb-section-offset">
 	@include('partials/guides', [
 		'bg' => 'bg-brand-grey',
+		'guideColour' => 'border-grey-500 border-opacity-25',
 		'angle' => 'bottom',
 	])
 
