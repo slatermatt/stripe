@@ -4,10 +4,25 @@
 		'guideColour' => 'border-off-white border-opacity-25',
 	])
 
-	<container spacing="pb-28 md:pb-32">
+	<container spacing="py-28 md:pb-32">
 		<div class="grid sm:grid-cols-2 items-center">
 			<div class="grid gap-8">
-				<h1 class="e-h1 pl-4 sm:min-w-title">{!! $title !!}</h1>
+				<div class="relative">
+					<h1 class="e-h1 mt-25 pl-4 sm:min-w-title">{!! $title !!}</h1>
+
+					<div
+						class="
+							gradient__offset
+							absolute bottom-0 top-auto -left-4
+							min-w-gradient w-screen h-gradient-height
+							overflow-hidden
+							transform -skew-y-12 origin-gradient
+							bg-red opacity-50"></div>
+
+					<div class="absolute top-0 left-0 opacity-25">
+						<h1 class="e-h1 mt-25 pl-4 sm:min-w-title">{!! $title !!}</h1>
+					</div>
+				</div>
 	
 				<p class="pl-4 pr-8">{!! $content !!}</p>
 	

@@ -87,6 +87,9 @@ module.exports = {
 				...(negative(theme('spacing'))),
 				...(negative(widths)),
 			}),
+			transformOrigin: {
+				'gradient': 'calc(calc((calc(100vw - 0px) - 1080px)/2) * 0.8) 100%',
+			},
 			gridTemplateColumns: {
 				'products-md': '323px 501px 256px',
 				'products-xs': '253px 392px 201px',
@@ -102,6 +105,7 @@ module.exports = {
 			},
 			minWidth: {
 				title: 'calc(100% + 100px)',
+				gradient: relative(1024),
 			},
 			maxWidth: {
 				container: relative(1080),
@@ -129,11 +133,13 @@ module.exports = {
 				'1/2em': '.5em',
 				'191': relative(764),
 				'118': relative(472),
+				'25': relative(100),
 				'28': relative(112),
 				'42': relative(168),
 				'92': relative(368),
 				'section-offset': 'calc(calc(100vw - 0px) * 0.106)',
 				'section': 'calc(calc(calc(100vw - 0px) * 0.106) + calc(128 * 1px) - 0.106 * calc((calc(100vw - 0px) - 1080px)/2))',
+				'gradient-height': 'calc(100% + 116px + calc(calc((calc(100vw - 0px) - 1080px)/2) * 0.8) * 0.212)',
 			},
 			width: {
 				...widths,
