@@ -1,5 +1,8 @@
 <header class="relative overflow-hidden">
-	@include('partials/guides')
+	@include('partials/guides', [
+		'bg' => 'bg-white',
+		'guideColour' => 'border-off-white border-opacity-25',
+	])
 
 	<container spacing="pb-28 md:pb-32">
 		<div class="grid sm:grid-cols-2 items-center">

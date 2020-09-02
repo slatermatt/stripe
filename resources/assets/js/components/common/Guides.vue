@@ -15,7 +15,7 @@
 			>
 				<div
 					:class="[
-						'grid relative max-w-container h-full mx-auto opacity-25',
+						'grid relative max-w-container h-full mx-auto',
 						'md:grid-cols-2',
 						'lg:grid-cols-4',
 					]"
@@ -24,7 +24,11 @@
 						v-for="(guide, index) in $data.guides"
 						:key="index"
 						:class="[
-							'w-px border-l border-dashed border-off-white opacity-25',
+							'w-px border-l',
+							(index === 0 || index === $data.guides - 1)
+								? 'border-solid'
+								: 'border-dashed',
+							$props.guideColour,
 							{
 								'hidden xs:block': index === 1 || index === 3,
 								'absolute top-0 right-0 h-full': index === 4,
@@ -43,6 +47,11 @@
 			bg: {
 				type: String,
 				default: null,
+			},
+
+			guideColour: {
+				type: String,
+				default: 'border-off-white',
 			},
 
 			angle: {

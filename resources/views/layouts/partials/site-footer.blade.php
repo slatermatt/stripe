@@ -1,6 +1,7 @@
 <footer class="relative overflow-hidden z-site-footer">
 	@include('partials/guides', [
 		'bg' => 'bg-brand-grey',
+		'guideColour' => 'border-grey-500 border-opacity-25',
 		'angle' => 'top',
 	])
 
