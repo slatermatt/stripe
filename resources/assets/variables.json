@@ -15,6 +15,11 @@
 			"grey": "#f6f9fc",
 			"body": "#425466"
 		},
+		"gradient": {
+			"red": "#fe343f",
+			"orange": "#fbaf5c",
+			"purple": "#ac5de6"
+		},
 		"black": "#000",
 		"white": "#fff",
 		"off-white": "#adbdcc",
