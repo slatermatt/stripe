@@ -4,4 +4,8 @@
 			left: calc(calc((calc(100vw - 0px) - 1080px) / 2) * -1) !important;
 		}
 	}
+
+	&__burn {
+		mix-blend-mode: color-burn;
+	}
 }
