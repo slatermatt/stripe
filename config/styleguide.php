@@ -157,22 +157,32 @@ return [
 							'attributes' => [
 								[
 									'text' => 'Start now',
+									'icon' => 'chevron-right',
 									'type' => 'primary',
 								],
 								[
 									'text' => 'Contact sales',
+									'icon' => 'chevron-right',
 								],
 								[
 									'text' => 'Start with payments',
+									'icon' => 'chevron-right',
 									'type' => 'secondary',
 								],
 								[
 									'text' => 'Read the docs',
+									'icon' => 'chevron-right',
 									'type' => 'tertiary',
 								],
 								[
 									'text' => 'Contact Sales',
+									'icon' => 'chevron-right',
 									'class' => 'text-brand-purple',
+								],
+								[
+									'text' => 'Sign in',
+									'icon' => 'chevron-right',
+									'type' => 'subtle',
 								],
 							],
 						],

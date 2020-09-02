@@ -9,9 +9,14 @@ button {
 		leading-normal
 		inline-block
 		relative
-		no-underline;
+		no-underline
+		font-bold;
 
 		padding: 3px 0 6px 0;
+
+	a {
+		@apply text-inherit;
+	}
 
 	&--primary {
 		@apply
@@ -72,6 +77,21 @@ button {
 
 		&:hover {
 			@apply bg-grey-200;
+		}
+	}
+
+	&--subtle {
+		@apply
+			rounded-button
+			bg-white-30
+			text-white
+			transition-colors
+			duration-200;
+
+		padding: 3px 12px 6px 16px;
+
+		&:hover {
+			@apply bg-white-50;
 		}
 	}
 }

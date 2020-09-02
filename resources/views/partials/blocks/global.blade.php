@@ -19,14 +19,16 @@
 
 			<div class="grid items-start row-gap-8 md:grid-cols-2 xl:grid-cols-4">
 				@foreach ($stats as $stat)
-					<div class="grid row-gap-2 px-4 sm:pr-8">
-						<h2 class="relative e-h3 leading-none">
-							<span class="absolute h-full w-px -left-4 bg-brand-blue-light"></span>
-		
-							<span class="text-white">{!! $stat['figure'] !!}</span>
-						</h2>
-				
-						<p class="e-body--small text-off-white">{!! $stat['description'] !!}</p>
+					<div class="px-4 sm:pr-8">
+						<p class="grid row-gap-2">
+							<div class="relative e-h3 leading-none">
+								<span class="absolute h-full w-px -left-4 bg-brand-blue-light"></span>
+			
+								<span class="text-white">{!! $stat['figure'] !!}</span>
+							</div>
+					
+							<span class="e-body--small text-off-white">{!! $stat['description'] !!}</span>
+						</p>
 					</div>
 				@endforeach
 			</div>
