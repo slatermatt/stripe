@@ -8,8 +8,10 @@
 	v-if="$root.$data.navOpen"
 	class="absolute top-0 left-0 bg-white w-full mt-4 rounded-lg overflow-hidden shadow-card"
 >
+	<h1 class="sr-only">Mobile navigation</h1>
+
 	<div class="flex items-center justify-between px-6 pt-6">
-		<h1 class="uppercase text-xs font-medium text-grey-600">{!! $nav['title'] !!}</h1>
+		<h2 class="uppercase text-xs font-medium text-grey-600">{!! $nav['title'] !!}</h2>
 
 		<e-button
 			@click.native="$root.$data.navOpen = false"

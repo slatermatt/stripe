@@ -3,7 +3,7 @@
 		@foreach ($nav as $item)
 			<li class="px-5 py-2">
 				<e-button
-					class="py-0"
+					class="py-0 text-white font-bold"
 					text="{!! $item['title'] !!}"
 					@if (@isset($item['url']))
 						href="{!! $item['url'] !!}"

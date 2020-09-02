@@ -1,6 +1,6 @@
 <header class="absolute w-full z-site-header">
 	<container>
-		<div class="relative flex items-center justify-between px-4 pt-8 pb-3 md:py-3">
+		<div class="relative flex items-center justify-between text-white px-4 pt-8 pb-3 md:py-3">
 			@include('partials/logo')
 
 			<div class="hidden md:block">
@@ -12,7 +12,7 @@
 					text="{!! $nav['cta']['title'] !!}"
 					href="{!! $nav['cta']['url'] !!}"
 					icon="chevron-right"
-					type="secondary"
+					type="subtle"
 				></e-button>
 			</div>
 

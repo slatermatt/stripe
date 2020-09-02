@@ -9,7 +9,9 @@
 		<div class="grid grid-cols-2 md:grid-cols-4">
 			<div class="flex flex-col px-4 e-body e-body--small">
 				<div class="space-y-2">
-					@include('partials/logo')
+					<div class="text-black">
+						@include('partials/logo')
+					</div>
 	
 					<icon-text
 						icon="chevron-right"
@@ -30,6 +32,8 @@
 
 			<div class="col-span-2 md:col-span-3">
 				<nav class="grid grid-cols-2 e-body e-body--small md:grid-cols-3">
+					<h2 class="sr-only">Footer navigation</h2>
+
 					<section class="px-4">
 						<h1 class="font-medium">{!! $footer['products']['title'] !!}</h1>
 
